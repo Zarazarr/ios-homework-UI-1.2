@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CatWithLamp" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-qU-2lb" userLabel="ProfilePicture">
+                    <rect key="frame" x="20" y="57" width="100" height="123"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="9JM-3N-LOV"/>
+                        <constraint firstAttribute="width" secondItem="WMh-qU-2lb" secondAttribute="height" multiplier="554:145" constant="-369.94482758620688" id="FIl-HT-QNv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1R-eK-igz">
+                    <rect key="frame" x="140" y="57" width="230" height="21"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odk-sh-HFk">
+                    <rect key="frame" x="140" y="108" width="230" height="21"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-Ig-gM7">
+                    <rect key="frame" x="140" y="159" width="230" height="21"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HPd-uo-NnX">
+                    <rect key="frame" x="20" y="200" width="350" height="201"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HPd-uo-NnX" secondAttribute="height" multiplier="350:201" id="JYF-Ue-CQn"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WMh-qU-2lb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="0XR-8o-MLv"/>
+                <constraint firstItem="K1R-eK-igz" firstAttribute="leading" secondItem="WMh-qU-2lb" secondAttribute="trailing" constant="20" id="2iy-DF-hp9"/>
+                <constraint firstItem="K1R-eK-igz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="8Ce-lm-c9s"/>
+                <constraint firstItem="HPd-uo-NnX" firstAttribute="top" secondItem="WMh-qU-2lb" secondAttribute="bottom" constant="20" id="M7B-qL-MX0"/>
+                <constraint firstItem="M8J-Ig-gM7" firstAttribute="leading" secondItem="WMh-qU-2lb" secondAttribute="trailing" constant="20" id="MTQ-3r-eeb"/>
+                <constraint firstItem="odk-sh-HFk" firstAttribute="leading" secondItem="WMh-qU-2lb" secondAttribute="trailing" constant="20" id="aoQ-82-jj1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K1R-eK-igz" secondAttribute="trailing" constant="20" id="i6s-uC-wH3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HPd-uo-NnX" secondAttribute="trailing" constant="20" id="iCv-gX-fmF"/>
+                <constraint firstItem="HPd-uo-NnX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="llG-Vi-ZWY"/>
+                <constraint firstItem="M8J-Ig-gM7" firstAttribute="top" secondItem="odk-sh-HFk" secondAttribute="bottom" constant="30" id="nee-mP-9Ph"/>
+                <constraint firstItem="odk-sh-HFk" firstAttribute="top" secondItem="K1R-eK-igz" secondAttribute="bottom" constant="30" id="uAa-u5-a9l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="odk-sh-HFk" secondAttribute="trailing" constant="20" id="yLN-hn-g73"/>
+                <constraint firstItem="WMh-qU-2lb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="yQ5-gG-AGE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="M8J-Ig-gM7" secondAttribute="trailing" constant="20" id="zZi-aS-nUV"/>
+            </constraints>
+            <connections>
+                <outlet property="profilePicture" destination="WMh-qU-2lb" id="c9o-f9-OiJ"/>
+                <outlet property="userBirthDate" destination="odk-sh-HFk" id="9gA-QE-L2R"/>
+                <outlet property="userCity" destination="M8J-Ig-gM7" id="ekW-HA-vIk"/>
+                <outlet property="userName" destination="K1R-eK-igz" id="jfy-LZ-06M"/>
+                <outlet property="userTextView" destination="HPd-uo-NnX" id="raJ-CL-oVG"/>
+            </connections>
+            <point key="canvasLocation" x="-26.153846153846153" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CatWithLamp" width="554" height="554"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
